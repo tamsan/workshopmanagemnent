@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ワークショップタイマー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- ヘッダー部：現在のセッションと残り時間 -->
+        <header class="header">
+            <h1 id="currentSessionName">セッションを追加してください</h1>
+            <div class="timer-display">
+                <span id="timeRemaining">00:00</span>
+            </div>
+        </header>
+
+        <!-- コントロール部：タイマー操作ボタン -->
+        <section class="controls">
+            <button id="startStopBtn" class="btn btn-primary" disabled>
+                スタート
+            </button>
+            <button id="nextBtn" class="btn btn-secondary" disabled>
+                次へ →
+            </button>
+        </section>
+
+        <!-- セッション追加部 -->
+        <section class="add-session">
+            <h2>セッション追加</h2>
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="sessionName" 
+                    placeholder="セッション名"
+                    class="input-field"
+                >
+                <input 
+                    type="number" 
+                    id="sessionDuration" 
+                    placeholder="時間（分）"
+                    min="1"
+                    max="180"
+                    class="input-field input-number"
+                >
+                <button id="addBtn" class="btn btn-add">追加</button>
+            </div>
+        </section>
+
+        <!-- セッション一覧部 -->
+        <section class="session-list">
+            <h2>セッション一覧</h2>
+            <ul id="sessionsList">
+                <!-- JavaScriptで動的に追加 -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

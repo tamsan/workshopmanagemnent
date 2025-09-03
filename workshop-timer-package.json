@@ -1,0 +1,29 @@
+{
+  "name": "workshop-timer",
+  "version": "1.0.0",
+  "description": "Simple workshop timer application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0"
+  },
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/workshop-timer"
+  },
+  "keywords": [
+    "workshop",
+    "timer",
+    "session",
+    "management"
+  ],
+  "author": "",
+  "license": "MIT"
+}
